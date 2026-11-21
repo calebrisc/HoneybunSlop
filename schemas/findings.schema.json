@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verifier findings",
+  "type": "object",
+  "required": ["verifier", "verdict", "findings"],
+  "properties": {
+    "verifier": { "type": "string" },
+    "verdict": { "enum": ["pass", "fail"] },
+    "checked": { "type": "array", "items": { "type": "string" }, "description": "What was actually run or read, so a reader can tell a pass from a skipped check." },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "severity", "claim", "evidence"],
+        "properties": {
+          "id": { "type": "string" },
+          "severity": { "enum": ["blocking", "note"] },
+          "criterion": { "type": "string" },
+          "file": { "type": "string" },
+          "line": { "type": "integer" },
+          "claim": { "type": "string", "description": "One sentence: what is wrong." },
+          "evidence": { "type": "string", "description": "Command output, file excerpt or trace that shows it. No evidence, no blocking finding." },
+          "repro": { "type": "string", "description": "A command or steps that reproduce it." }
+        }
+      }
+    }
+  }
+}

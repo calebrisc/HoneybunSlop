@@ -1,0 +1,9 @@
+{
+  "gates": [
+    { "name": "example-lint", "cmd": "echo 'replace with your lint command'", "on_edit": true },
+    { "name": "example-tests", "cmd": "echo 'replace with your test command'" }
+  ],
+  "max_stop_blocks": 3,
+  "max_rounds": 3,
+  "gate_timeout_seconds": 600
+}

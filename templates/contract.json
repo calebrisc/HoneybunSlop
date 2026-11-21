@@ -1,0 +1,17 @@
+{
+  "id": "",
+  "title": "",
+  "rigor": "standard",
+  "source": "Where this task came from: a design brief section, a bug report, a request.",
+  "scope": ["src/**"],
+  "protected": ["tests/**"],
+  "criteria": [
+    {
+      "id": "AC1",
+      "text": "TODO: one observable outcome and how it is measured, e.g. \"the player jumps 3.0 units, measured by tests/jump_test\"",
+      "check": { "kind": "command", "command": "TODO: the command that proves AC1" }
+    }
+  ],
+  "out_of_scope": [],
+  "notes": ""
+}

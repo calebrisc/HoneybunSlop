@@ -1,0 +1,7 @@
+{
+  "name": "honeybun-slop",
+  "version": "0.1.0",
+  "description": "Layered verifier/prover harness for game development: design intake, task contracts, evidence ledgers, deterministic gates and independent verifiers.",
+  "author": { "name": "Cale" },
+  "license": "MIT"
+}
